@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locadora 2000</title>
+    <!-- ? Fav Icon -->
+    <link rel="icon" type="image/png" href="/img/icon.png" />
+    <!-- ? Arquivo CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+       <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- ? Script JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Tag nav para Menu -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <!-- com o /img não abria a imagem porisso usei sem -->
+            <img class="me-3" src="img/film.svg" alt="Locadora 2000" />
+            <a class="navbar-brand" href="#topo">Locadora 2000</a>
+
+            <div class="collapse navbar-collapse" id="navBarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="#tabFilmes">
+                            Filmes Disponíveis</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a 
+                        class="nav-link dropdown-toggle" 
+                        id="dropGeneros" 
+                        role="button" 
+                        data-bs-toggle="dropdown" 
+                        href="#drop"
+                        aria-expanded="false"
+                        >
+                            Filmes por Categoria
+                        </a>
+                        <ul 
+                        class="dropdown-menu" 
+                        aria-labelledby="navbarDropdownMenuLink"
+                        >
+                            <li><a class="dropdown-item" href="#gacao">Ação</a></li>
+                            <li><a class="dropdown-item" href="#ganim">Animação</a></li>
+                            <li><a class="dropdown-item" href="#groman">Romance</a></li>
+                            <li><a class="dropdown-item" href="#gsus">Suspense</a></li>
+                        </ul>
+                    </li>
+
+                   <li class="nav-item">
+                    <a class="nav-link" href="#cadfilmes">Cadastrar Filmes</a>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="display-1 text-center mb-5 mt-3" id="topo">Locadora 2000</h1>
+
+    <div class="container">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Diretor</th>
+                    <th scope="col">Lançamento</th>
+                    <th scope="col">Gêneros</th>
+                    <th scope="col">Ator/Atriz Principal</th>
+                    <th scope="col">Nota IMDb</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th class="text-center table-primary" colspan="7" id="gacao">
+                        Ação
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td scope="col">Homem-Aranha</td>
+                    <td scope="col">Sam Raimi</td>
+                    <td scope="col">17 de maio de 2002</td>
+                    <td scope="col">Ação</td>
+                    <td scope="col">Tobey Maguire, Kirsten Dunst</td>
+                    <td scope="col">7,4</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td scope="col">Baby Driver</td>
+                    <td scope="col">Edgar Wright</td>
+                    <td scope="col">11 de março de 2017</td>
+                    <td scope="col">Ação</td>
+                    <td scope="col">Ansel Elgort, Lily James</td>
+                    <td scope="col">7.6</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td scope="col">A Origem</td>
+                    <td scope="col">Christopher Nolan</td>
+                    <td scope="col">08 de julho de 2010</td>
+                    <td scope="col">Ação</td>
+                    <td scope="col">Leonardo DiCaprio</td>
+                    <td scope="col">8,8</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td scope="col">Akira</td>
+                    <td scope="col">Katsuhiro Otomo</td>
+                    <td scope="col">16 de julho de 1988</td>
+                    <td scope="col">Ação</td>
+                    <td scope="col">-</td>
+                    <td scope="col">8</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td scope="col">Matrix</td>
+                    <td scope="col">Lilly Wachowski, Lana Wachowski</td>
+                    <td scope="col">31 de março de 1999</td>
+                    <td scope="col">Ação</td>
+                    <td scope="col">Keanu Reeves</td>
+                    <td scope="col">8,7</td>
+                </tr>
+
+                <tr>
+                    <th class="text-center table-primary" colspan="7" id="ganim">
+                        Animação
+                    </th>
+                <tr>
+                        <th scope="row">6</th>
+                        <td scope="col">O Castelo Animado</td>
+                        <td scope="col">Hayao Miyazaki</td>
+                        <td scope="col">20 de novembro de 2004</td>
+                        <td scope="col">Animação</td>
+                        <td scope="col">-</td>
+                        <td scope="col">8,2</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td scope="col">A Viagem de Chihiro</td>
+                    <td scope="col">Hayao Miyazaki</td>
+                    <td scope="col">20 de julho de 2001</td>
+                    <td scope="col">Animação</td>
+                    <td scope="col">-</td>
+                    <td scope="col">8,6</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td scope="col">Vida de Inseto</td>
+                    <td scope="col">John Lasseter</td>
+                    <td scope="col">20 de novembro de 1998</td>
+                    <td scope="col">Animação</td>
+                    <td scope="col">-</td>
+                    <td scope="col">7,2</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td scope="col">Shrek</td>
+                    <td scope="col">Adam Adamson, Vicky Jenson</td>
+                    <td scope="col">18 de maio de 2001</td>
+                    <td scope="col">Animação</td>
+                    <td scope="col">-</td>
+                    <td scope="col">7,9</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td scope="col">Coraline</td>
+                    <td scope="col">Henry Selick</td>
+                    <td scope="col">13 de fevereiro de 2009</td>
+                    <td scope="col">Animação</td>
+                    <td scope="col">-</td>
+                    <td scope="col">7,7</td>
+                </tr>
+
+                <tr>
+                    <th class="text-center table-primary" colspan="7" id="groman">
+                        Romance
+                    </th>
+                <tr>
+                        <th scope="row">11</th>
+                        <td scope="col">A Casa do Lago</td>
+                        <td scope="col">Alejandro Agresti</td>
+                        <td scope="col">16 de julho de 2006</td>
+                        <td scope="col">Romance</td>
+                        <td scope="col">Keanu Reeves, Sandra Bullock</td>
+                        <td scope="col">6,8</td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td scope="col">Da Magia à Sedução</td>
+                    <td scope="col">Griffin Dunne</td>
+                    <td scope="col">16 de outubro de 1998</td>
+                    <td scope="col">Romance</td>
+                    <td scope="col">Sandra Bullock, Nicole Kidman</td>
+                    <td scope="col">6,3</td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td scope="col">A Proposta</td>
+                    <td scope="col">Anne Fletcher</td>
+                    <td scope="col">19 de junho de 2009</td>
+                    <td scope="col">Romance</td>
+                    <td scope="col">Sandra Bullock, Ryan Reynolds</td>
+                    <td scope="col">6,7</td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td scope="col">Uma Linda Mulher</td>
+                    <td scope="col">Garry Marshall</td>
+                    <td scope="col">23 de março de 1990</td>
+                    <td scope="col">Romance</td>
+                    <td scope="col">Richard Gere, Julia Roberts</td>
+                    <td scope="col">7,1</td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td scope="col">10 Coisas Que Eu Odeio em Você</td>
+                    <td scope="col">Gil Junger</td>
+                    <td scope="col">31 de março de 1999</td>
+                    <td scope="col">Romance</td>
+                    <td scope="col">Heath Ledger, Julia Stiles</td>
+                    <td scope="col">7,3</td>
+                </tr>
+
+                <tr>
+                    <th class="text-center table-primary" colspan="7" id="gsus">
+                        Suspense
+                    </th>
+                <tr>
+                        <th scope="row">16</th>
+                        <td scope="col">Parasita</td>
+                        <td scope="col">Bong Joon-ho</td>
+                        <td scope="col">30 de maio de 2019</td>
+                        <td scope="col">Suspense</td>
+                        <td scope="col">Song Kang-ho, Park So-dam</td>
+                        <td scope="col">8,5</td>
+                </tr>
+                <tr>
+                    <th scope="row">17</th>
+                    <td scope="col">Corra!</td>
+                    <td scope="col">Jordan Peele</td>
+                    <td scope="col">24 de fevereiro de 2017</td>
+                    <td scope="col">Suspense</td>
+                    <td scope="col">Daniel Kaluuya</td>
+                    <td scope="col">7,8</td>
+                </tr>
+                <tr>
+                    <th scope="row">18</th>
+                    <td scope="col">Onde os Fracos Não Tem Vez</td>
+                    <td scope="col">Ethan Cohen, Joel Cohen</td>
+                    <td scope="col">21 de novembro de 2007</td>
+                    <td scope="col">Suspense</td>
+                    <td scope="col">Javier Bardem</td>
+                    <td scope="col">8,2</td>
+                </tr>
+                <tr>
+                    <th scope="row">19</th>
+                    <td scope="col">O Sexto Sentido</td>
+                    <td scope="col">M. Night Shyamalan</td>
+                    <td scope="col">02 de agosto de 1999</td>
+                    <td scope="col">Suspense</td>
+                    <td scope="col">Bruce Willis</td>
+                    <td scope="col">8,2</td>
+                </tr>
+                <tr>
+                    <th scope="row">20</th>
+                    <td scope="col">Os Outros</td>
+                    <td scope="col">Alejandro Almenábar</td>
+                    <td scope="col">02 de agosto de 2001</td>
+                    <td scope="col">Suspense</td>
+                    <td scope="col">Nicole Kidman</td>
+                    <td scope="col">7,6</td>
+                </tr>
+                <tr id="insertRow"></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mb-5 mt-5">
+        <hr class="border-primary border-3 opacity-75" />
+    </div>
+
+    <div class="container mb-5" id="cadfilmes">
+        <h2 class="text-center mb-4">Cadastro de Filmes</h2>
+
+        <form name="register" onsubmit="event.preventDefault()">
+            <!-- ? Cadastro do Código e do Título -->
+            <div class="row">
+                <div class="mb-3 col">
+                    <label for="codFilm" class="form-label">Código</label>
+                    <input type="text" class="form-control" id="codFilm" name="cod" />
+                </div>
+
+                <div class="mb-3 col">
+                    <label for="titleFilm" class="form-label">Título</label>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="titleFilm" 
+                    name="title"
+                    />
+                </div>
+            </div>
+
+            <!-- ? Cadastro de Diretor e Lançamento -->
+            <div class="row">
+                <div class="mb-3 col">
+                    <label for="directorFilm" class="form-label">Diretor</label>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="directorFilm" 
+                    name="director"
+                    />
+                </div>
+
+                <div class="mb-3 col">
+                        <label for="yearFilm" class="form-label">Lançamento</label>
+                        <input 
+                        type="text" 
+                        class="form-control" 
+                        id="yearFilm" 
+                        placeholder="DD de MM de AA" 
+                        name="date"
+                        />
+                </div>
+            </div>
+
+            <!-- ? Cadastro de Ator/Atriz e Nota IMDb -->
+            <div class="row">
+                <div class="mb-3 col">
+                    <label for="actor" class="form-label">Ator/Atriz Principal</label>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="actor" 
+                    name="actor"
+                    />
+                </div>
+
+                <div class="mb-3 col">
+                        <label for="imdbRate" class="form-label">Nota IMDb</label>
+                        <input 
+                        type="text" 
+                        class="form-control" 
+                        id="imdbRate"
+                        name="imdb" 
+                        />
+                </div>
+            </div>
+
+            <!-- ? Cadastro de Gênero -->
+            <p>Selecione o Gênero</p>
+            <div class="row mt-3">
+                <div class="col form-check ms-5">
+                    <input 
+                    type="radio" 
+                    id="radioGAcao" 
+                    name="radio" 
+                    class="form-check-input" 
+                    value="acao"
+                    />
+                    <label for="radioGAcao" class="form-label">Ação</label>
+                </div>
+                <div class="col form-check">
+                    <input 
+                    type="radio" 
+                    id="radioGAnim" 
+                    name="radio" 
+                    class="form-check-input"
+                    value="animacao"
+                    />
+                    <label for="radioGAnim" class="form-label"> Animação </label>
+                </div>
+                <div class="col form-check">
+                    <input 
+                    type="radio" 
+                    id="radioGRoman" 
+                    name="radio" 
+                    class="form-check-input" 
+                    value="romance" 
+                    />
+                    <label for="radioGRoman" class="form-label">Romance</label>
+                </div>
+                <div class="col form-check">
+                    <input 
+                    type="radio" 
+                    id="radioGSus" 
+                    name="radio" 
+                    class="form-check-input" 
+                    value="suspense"
+                    />
+                    <label for="radioGSus" class="form-label">Suspense</label>
+                </div>
+            </div>
+
+            <!-- ? Botão de Enviar -->
+            <div class="col-auto d-flex justify-content-center">
+                <button 
+                type="submit" 
+                onclick="validationForm(); insert()" 
+                class="btn btn-primary mt-3"
+                >
+                Cadastrar
+            </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

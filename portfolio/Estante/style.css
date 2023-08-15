@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: smooth;
+    /*Suavização*/
+}
+
+/* Corpo da Aplicação */
+body {
+    /* background */
+    background-color: #F2e7dc;
+
+    /* texto */
+    color: #0e0d0d;
+    text-align: justify;
+
+    /* Alinhamento e Tamanho */
+    /* 1 ren = 16px, tela grande: font size = 16px, tela média: font size = 15px, tela pequena: font size = 14px*/
+    width: 85%;
+    margin: auto;
+}
+
+/* Seções dos Livros */
+section {
+    /* Espaçamento dentro da Seção */
+    padding: 64px 256px;
+    
+    /*0 10 20 30;*/
+    /*64px 256px 64px 256px;*/
+    /*
+    padding-left: 256px;
+    padding-right: 256px;
+    padding-bottom: 64px;
+    padding-top: 64px;
+    */
+}
+
+/* Tabela */
+table {
+    /* Largura */
+    width: 100%;
+}
+td {
+    /* Background */
+    background-color: #a9d9d0;
+}
+td, 
+th {
+    /* Borda no formato shorthand */
+    border: #000 solid 1px;
+    border-radius: 4px;
+    /* Alinhamento do texto */
+    text-align: center;
+}
+tr {
+    /* Background */
+    background-color: #038c7f;
+}
+
+/* Título, Texto e Parágrafos */
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+h1, 
+h2, 
+h3 {
+    text-align: center;
+}
+h3 {
+    color: #000;
+}
+
+/* Links */
+a:link {
+    color: #f2e7dc; /* Link normal */
+}
+a:visited {
+    color: #95bfb8; /* Link visitado */
+}
+a:hover {
+    color: #025454; /* Mouse sobre o link */
+}
+a:active {
+    color: #0d0d0d; /* Link selecionado */
+}
+
+/* Imagem */
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.bookTitle {
+    background-color: #a9d9d0;
+    color: #027373;
+    text-align: center;
+}
+
+#sectionHP, 
+#sectionNor, 
+#sectionDoq,
+#sectionCem,
+#sectionOho {
+    background-color: #a9d9d0;
+}
+#header{
+background-color: #038c7f;
+color: #f2e7dc;
+padding: 20px;
+margin-bottom: 0px;
+}
+#yourLibrary{
+    text-indent: 0px;
+    text-align: center;
+}
+#summary{
+background-color: #038c7f;
+color: #f2e7dc;
+padding: 20px;
+margin-bottom: 50px;
+border-radius: 0 0 50px 50px;
+display: flex; /* Itens lado a lado */
+flex-direction: column;
+align-items: center;
+}
+
+/*pra forçar uma config= !important*/
+/* Rodapé */
+
+footer {
+    background-color: #038c7f;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
